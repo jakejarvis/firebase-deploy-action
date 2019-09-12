@@ -15,7 +15,7 @@ If you don't have a `firebase.json` file, you also need to specify a `PROJECT_ID
 
 You can add add optional `firebase deploy` [flags](https://firebase.google.com/docs/cli#deployment) by using `with: args:` under this step.
 
-```
+```yaml
 jobs:
   deploy:
     runs-on: ubuntu-latest
