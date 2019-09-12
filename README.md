@@ -11,7 +11,7 @@ This simple action uses the vanilla [Firebase CLI](https://github.com/firebase/f
 
 This example checks out your repository and runs `firebase deploy` on the root of it. Assuming you have a [`firebase.json` file](https://firebase.google.com/docs/hosting/full-config) there, everything is taken care of automatically except your Firebase/Google Cloud [API Token](https://firebase.google.com/docs/cli#admin-commands), which should be declared as a [secret environment variable](https://developer.github.com/actions/managing-workflows/storing-secrets/) named `FIREBASE_TOKEN`. Obtain a token by running `firebase login:ci` on your local command line.
 
-If you don't have a `firebase.json` file, you also need to specify a `PROJECT_ID` environment variable with your Firebase project's unique ID.
+If you don't have a `firebase.json` file, you also need to specify a `FIREBASE_PROJECT_ID` environment variable with your Firebase project's unique ID.
 
 You can add add optional `firebase deploy` [flags](https://firebase.google.com/docs/cli#deployment) by using `with: args:` under this step.
 
